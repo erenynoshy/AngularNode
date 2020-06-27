@@ -1,0 +1,14 @@
+#copy{
+    background-color: lightslategray;
+    overflow: hidden;
+    height: 20px;
+    text-align: center;
+}
+#content{
+    background-color:darkgrey;
+   
+}
+#copy>span{
+    color: red;
+    margin-left: 10px;
+}

@@ -1,0 +1,82 @@
+<div>
+  <div class=" col-12" style="background-color: #ff704d;"> 
+    <div class="d-md-inline-block  d-none col-4">Limited Time Only · 5 for $25</div>
+    <div class="d-md-inline-block d-none col-7">Undies UP TO 40% OFF ALL INTIMATES & LOUNGE</div>
+     <div class="d-md-inline-block d-none col-1"> Shop </div>
+
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="../../assets/coco/ll.png"/>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="../home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" *ngIf="getproduct">
+        <a class="nav-link" routerLink="../product">Product</a>
+      </li>
+      <li class="nav-item" *ngIf="getproduct">
+        <a class="nav-link" routerLink="../profile">Profile</a>
+      </li>
+
+  
+
+<!-- the drop down list -->
+
+      <!-- <li class="nav-item ">
+        <a class="nav-link" >Admin</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="nav-link" routerLink="../adminAdd">Product Handling </a> </li>
+            <li> <a class="nav-link" routerLink="../orderhandle">Order Hnadling</a>
+          </li>
+        </ul>
+      </li> -->
+
+      <div class="dropdown show  " *ngIf="!getValue">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     
+          Admin
+         
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="nav-link" routerLink="../adminAdd">Product Handling </a> 
+          <li> <a class="nav-link" routerLink="../orderhandle">Order Hnadling</a>
+        </div>
+      </div>
+
+<!-- end of drop down list -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../about">
+          
+          About Us
+          
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="../login">Login </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../register">Register </a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link"  (click)="logout()" >logout  </a>
+      </li>
+    </ul>
+   
+      <input class="form-control mr-sm-2 col-3" type="search" placeholder="Search" [(ngModel)]="searchCat" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" (click)="search($event);" type="submit">
+       Search</button>
+    
+    <a routerLink="../userorder"> <i class="fa fa-shopping-cart btn btn-outline-danger my-2 my-sm-0"  ></i></a>
+    
+  </div>
+</nav>
+
+</div>

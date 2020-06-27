@@ -1,0 +1,49 @@
+.example-card {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.example-header-image {
+  /* background-image: url("../../assets/coco/1.jpg"); */
+  /* background-size: cover; */
+  width:50 px;
+  height: 50px;
+}
+mat-card-actions>button
+{
+ outline: none;
+  background-color: lightcoral;
+
+}
+button
+{
+  outline: none;
+}
+::ng-deep .red-tooltip{
+  background-color: lightcoral!important;
+  color:black!important;
+  
+}
+
+.container
+{
+  flex: 1 1 300px;
+  height: 700px;
+margin: 20%;
+ margin: 50px;
+
+
+}
+.wrapper
+{
+  display: flex;
+width: 100%;
+
+
+  flex-wrap: wrap;
+  height:fit-content;
+}
+img
+{
+  height:400px ;
+}

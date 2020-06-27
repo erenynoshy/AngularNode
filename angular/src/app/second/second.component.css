@@ -1,0 +1,25 @@
+div
+{
+    background-color: pink;
+    width:30%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div >*
+{
+    margin: 10px;
+
+}
+table
+{
+    border:1px solid black;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+table td
+{
+
+    border:1px solid black;  
+}

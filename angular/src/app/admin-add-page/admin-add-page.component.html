@@ -1,0 +1,123 @@
+<app-main-nav></app-main-nav>
+<app-form-add></app-form-add>
+
+<div class="wrapper">
+    <div class="container col-md-4" *ngFor="let pro of  product">
+        <div class="card card-profile">
+            <div class="card-header card-header-image">
+            <a >
+                <img class="img" src="{{pro.image}}">
+            </a>
+        <div class="colored-shadow" style="background-image: url('https://zsuttonphoto.com/wp-content/uploads/2014/02/Albuquerque-Portrait-Photography-11.jpg'); opacity: 1;"></div></div><div class="card-body ">
+            <h4 class="card-title">{{pro.title}}</h4>
+            <h6 class="card-category text-gray">{{pro.price}}</h6>
+    
+    
+        </div>
+        <div class="card-footer justify-content-center">
+       
+            <!-- <a  class="btn btn-just-icon btn-google btn-round" >
+                <i >Update</i>
+            </a> -->
+<!---------------------------------------------------->
+
+<!--  -->
+
+<!-- Button trigger modal -->
+  <!-- -------------------------------------------------------->
+  <button  class="btn btn-just-icon btn-google btn-round " (click)="delete($event);">
+    <i >Delete</i>
+</button>
+
+
+<button type="button" (click)="update($event)" class=" btn btn-just-icon btn-google btn-round" data-toggle="modal" data-target="#update">
+    Update
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">Update Product</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeModelupdate">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+  
+    <div class=" d-flex justify-content-center h-100">
+      <div class="backCard">
+    <div class="card-header d-flex justify-content-center">
+      <div class="picture-container">
+          <div class="picture">
+  
+              <div >
+                  <img src={{productImage}} class="avatar picture-src" alt="avatar"  >
+                  
+                  <input type="file" class="text-center center-block file-upload">
+                </div><br>
+          </div>
+      </div>
+      </div>
+      </div>
+  </div>
+  
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4" for="product_name">Product Name :</label>
+            <!-- <div class="col-md-4"> -->
+              <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class=" input-md"
+                required="" type="text" value={{productTitle}} [(ngModel)]="title" >
+  
+            <!-- </div> -->
+          </div>
+  
+
+
+           
+         
+  
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 " for="percentage_discount">Price</label>
+           
+              <input id="percentage_discount" name="percentage_discount" placeholder={{productPrice}}
+              [(ngModel)]="price"  class=" input-md" required="" type="text" value={{productPrice}}>
+  
+            
+          </div>
+  
+          <button  class="btn btn-just-icon btn-google btn-round " (click)="save();">
+            <i >Save Change</i>
+        </button>
+       
+        
+  
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+    </div>
+        </div>
+    
+    </div>

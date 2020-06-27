@@ -1,0 +1,32 @@
+.example-ripple-container {
+    cursor: pointer;
+    text-align: center;
+  margin: auto 10px;
+    /* width: 250px;
+    height: 200px; */
+    line-height: 300px;
+  
+background-image: url('../../assets/coco/f1.jpg'); 
+ background-repeat: no-repeat;
+background-size: cover;
+display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .container
+  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   margin: 20px auto;
+  }
+  .container :nth-child(4n)
+  {
+  
+    margin-left: 65%;
+  }
+
+  h3
+  {
+    margin-bottom: 40px;
+    text-align: center;
+  }

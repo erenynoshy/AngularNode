@@ -1,0 +1,28 @@
+img
+{
+height: 50px;
+width: 50px;
+}
+a
+{
+  margin-right: 15px;
+}
+.btn-outline-danger
+{
+  margin-right: 5px;
+}
+
+a:hover
+{
+  transform: scale(1.4);
+}
+li:hover
+{
+  
+
+ border-bottom: 2px solid red;
+}
+.navbar-collapse
+{
+  margin-left: 20px;
+}

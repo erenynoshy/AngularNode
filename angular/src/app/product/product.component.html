@@ -1,0 +1,24 @@
+<app-main-nav></app-main-nav>
+<div class="wrapper">
+<div class="container col-md-4" *ngFor="let pro of product">
+    <div class="card card-profile">
+        <div class="card-header card-header-image">
+        <a href="#pablo">
+            <img class="img" src="{{pro.image}}">
+        </a>
+    <div class="colored-shadow" style="background-image: url('https://zsuttonphoto.com/wp-content/uploads/2014/02/Albuquerque-Portrait-Photography-11.jpg'); opacity: 1;"></div></div><div class="card-body ">
+        <h4 class="card-title">{{pro.title}}</h4>
+        <h6 class="card-category text-gray">{{pro.price}}</h6>
+
+
+    </div>
+    <div class="card-footer justify-content-center">
+   
+        <a href="#pablo" class="btn btn-just-icon btn-google btn-round">
+            <i >Add  To Bag</i>
+        </a>
+    </div>
+</div>
+    </div>
+
+</div>

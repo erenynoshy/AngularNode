@@ -1,0 +1,83 @@
+<!-- <p>registration works!</p> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+
+<body background="../../assets/coco/c5.jpg" style="background-repeat: no-repeat; background-size:cover;" >
+    <app-main-nav></app-main-nav>
+    <div class="container">
+        <div class=" d-flex justify-content-center h-100">
+
+
+            <div class="backCard">
+                <div class="card-header d-flex justify-content-center">
+                    <div class="picture-container">
+                        <div class="picture">
+
+                            <div >
+                                <!-- <img src="../../assets/coco/profile.png" class="avatar picture-src" alt="avatar">
+                                
+                                <input type="file"  class="text-center center-block file-upload"> -->
+                              
+                                <input type='file' (change)="readUrl($event)" class="text-center center-block file-upload">
+                                <img [src]="imgsrc" class="avatar picture-src" alt="avatar">
+                            
+                            </div><br>
+
+
+                             
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="sign d-flex justify-content-center">
+                    <h3>Sign up</h3>
+                </div>
+                <div class="card-body">
+                    <!-- <form> -->
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text col-4"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control col-8"[(ngModel)]="username" placeholder="userName">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text col-4"><i class="far fa-envelope"></i></span>
+                            </div>
+                            <input type="text" class="form-control col-8" [(ngModel)]="email" placeholder="E-mail">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text col-4"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control col-8" [(ngModel)]="passward" placeholder="password">
+                        </div>
+
+                    <!-- </form> -->
+                </div>
+                <div class="card-footer">
+                    <div class="form-group">
+                        <input type="submit" (click)="createnewUser()" value="Register" class="btn float-right Register_btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

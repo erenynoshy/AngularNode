@@ -1,0 +1,72 @@
+<!-- 
+<div class="login-wrap">
+    <h2>Login</h2>
+    
+    <div class="form">
+      <input type="text" placeholder="Username" [(ngModel)]="username" name="un" />
+      <input type="password" placeholder="Password" [(ngModel)]="passward" name="pw" />
+      <input type="text" placeholder="age" name="age" [(ngModel)]="age"/>
+      <input type="text" placeholder="email" name="email" [(ngModel)]="email" />
+
+      <button (click)="createnewlist()"> Sign up </button>
+      <a href="#"> <p> Don't have an account? Register </p></a>
+    </div>
+  </div> -->
+
+  
+  <div class="container">
+    <div class=" d-flex justify-content-center h-100">
+
+
+        <div class="backCard">
+            <div class="card-header d-flex justify-content-center">
+                <div class="picture-container">
+                    <div class="picture">
+
+                        <img src= "{{ imageSrc }}" class="picture-src" id="wizardPicturePreview"
+                            title="" />
+                        <input type="file" id="wizard-picture" (change)="preview($event)">
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="sign d-flex justify-content-center">
+                <h3>Sign up</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                     <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text col-4"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control col-8" placeholder="userName">
+
+                    </div> 
+                  
+
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text col-4"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="text" class="form-control col-8" placeholder="E-mail">
+
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text col-4"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control col-8" placeholder="password">
+                    </div>
+
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="form-group">
+                    <input type="submit" (click)="createnewUser()" value="Register" class="btn float-right Register_btn">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

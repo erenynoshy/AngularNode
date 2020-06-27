@@ -1,0 +1,155 @@
+<app-main-nav></app-main-nav>
+<div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img [src]="url" alt=""/>
+                            <div class="file btn btn-lg btn-primary">
+                                Change Photo
+                                <input type="file" name="file" />
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                    <h5>
+                                       {{userName}}
+                                    </h5>
+                                    <h6>
+                                         I am 20 Years old 
+                                    </h6>
+                                    
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="submit" class="profile-edit-btn" data-toggle="modal" data-target="#exampleModal" name="btnAddMore" value="Edit Profile"/>
+                    </div>
+<!-- the module-->
+<!--  -->
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Profile</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+  
+    <div class=" d-flex justify-content-center h-100">
+      <div class="backCard center-block">
+    <div class="card-header d-flex justify-content-center">
+      <div class="picture-container center-block">
+          <div class="picture center-block">
+  
+              <div >
+                  <img src={{url}} class="avatar picture-src" alt="avatar">
+                  
+                  <input type="file" class="text-center center-block file-upload">
+                </div><br>
+          </div>
+      </div>
+      </div>
+      </div>
+  </div>
+  
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4" for="product_name">Name </label>
+            <!-- <div class="col-md-4"> -->
+              <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class=" input-md" 
+              [(ngModel)]="userName" 
+                required="" type="text">
+  
+            <!-- </div> -->
+          </div>
+  
+          
+  
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 " for="percentage_discount">Email</label>
+           
+              <input id="percentage_discount" name="percentage_discount" placeholder="PERCENTAGE DISCOUNT"
+              [(ngModel)]="email" class=" input-md" required="" type="text">
+  
+            
+          </div>
+  
+  
+       
+          <!-- Button -->
+          <div class="form-group center-block">
+            <div class="col-md-4 center-block">
+              <button id="singlebutton" name="singlebutton" (click)="updateprofile()" class="btn btn-danger text-center  center-block">Save</button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                    <!--the page of profile-->
+                </div>
+                <div class="row " id ="about" >
+                 
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>User Id</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{userId}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{userName}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{email}}</p>
+                                            </div>
+                                        </div>
+                                       
+                                      
+                            </div>
+                          
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>           
+        </div>

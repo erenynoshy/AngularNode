@@ -1,0 +1,42 @@
+#carouselExampleIndicators
+{
+   
+    height: 100px;
+    margin: 5px auto;
+    width: 80%;
+  border-radius: 2%;
+
+}
+img
+{
+    height:50px;
+    width:50px;
+    margin-left: 40px;
+}
+.carousel-inner
+{
+    height: 100%;
+    margin: 0px auto;
+}
+img
+{
+    margin-left: 20px;
+    height: 100px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+#close
+{
+  
+margin-left: 70%;
+outline: none;
+border: none;
+}
+#contain
+{
+    width: 70%;
+    margin: 10px auto;
+    height:150px;
+}
